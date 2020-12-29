@@ -18,6 +18,7 @@ Websites that you should use when writing the report:
 
 * [cwe.mitre.org/data](https://cwe.mitre.org/data)
 * [owasp.org/projects](https://owasp.org/projects)
+* [cheatsheetseries.owasp.org](https://cheatsheetseries.owasp.org/Glossary.html)
 * [nvd.nist.gov/vuln-metrics/cvss/v3-calculator](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator)
 
 If you are interested, check my [WiFi penetration testing cheat sheet](https://github.com/ivan-sincek/wifi-penetration-testing-cheat-sheet).
