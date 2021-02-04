@@ -121,9 +121,9 @@ Keep in mind that some web applications are only accessible through older web br
 
 Keep in mind that some web applications may be missing the index page and may not redirect you to the home page at all. If that's the case, try to manually guess a full path to the home page or use [DirBuster](#dirbuster).
 
-Search the Internet for default paths and files for a specific web application and possibly use the information gathered in combination with Google Dorks.
+Search the Internet for default paths and files for a specific web application, and possibly use the information gathered in combination with Google Dorks.
 
-**Don't forget to access a web server over an IP address because you may find server's default welcome page and/or some other content.**
+**Don't forget to access a web server over an IP address because you may find server's default welcome page and some other content.**
 
 Inspect the Web Console for possible errors.
 
@@ -426,7 +426,7 @@ for ip in $(cat nmap_ping_sweep_results.txt); do nmap -nv -sU -sV -sC -Pn $ip -p
 | -n/-R | Never do DNS resolution/Always resolve (default: sometimes) |
 | -v | Increase verbosity level (use -vv or more for greater effect) |
 | -Pn | Treat all hosts as online -- skip host discovery |
-| -A | Enable OS detection, version detection, script scanning and traceroute |
+| -A | Enable OS detection, version detection, script scanning, and traceroute |
 | -sS/sT/sA | TCP SYN/Connect()/ACK |
 | -sV | Probe open ports to determine service/version info |
 | -sn | Ping scan - disable port scan |
@@ -438,7 +438,7 @@ for ip in $(cat nmap_ping_sweep_results.txt); do nmap -nv -sU -sV -sC -Pn $ip -p
 | -sC | Same as --script=default |
 | -O | Enable OS detection |
 | --reason | Display the reason a port is in a particular state |
-| -oN/-oX/-oG | Output scan in normal, XML and Grepable format |
+| -oN/-oX/-oG | Output scan in normal, XML, and Grepable format |
 
 For more options run `man nmap` or `nmap -h`.
 
@@ -536,7 +536,7 @@ Find out more about reflected and stored XSS attacks from my other [project](htt
 
 ### SQL Injection
 
-Try to produce database errors by injecting a single-quote, back-slash, double-hyphen, forward-slash or period.
+Try to produce database errors by injecting a single-quote, back-slash, double-hyphen, forward-slash, or period.
 
 The following examples were tested on MySQL database.
 
@@ -610,11 +610,11 @@ sqlmap -a -u somesite.com/index.php --data username=test&password=test
 | -b | Retrieve DBMS banner |
 | --dump-all | Dump all DBMS databases tables entries |
 | --os-shell | Prompt for an interactive operating system shell |
-| --os-pwn | Prompt for an OOB shell, Meterpreter or VNC |
+| --os-pwn | Prompt for an OOB shell, Meterpreter, or VNC |
 | --sqlmap-shell | Prompt for an interactive sqlmap shell |
 | --wizard | Simple wizard interface for beginner users |
 
-For more options run `man sqlmap`, `sqlmap -h` or `sqlmap -hh`.
+For more options run `man sqlmap`, `sqlmap -h`, or `sqlmap -hh`.
 
 ### dotdotpwn
 
@@ -633,7 +633,7 @@ dotdotpwn -m http-url -u https://somesite.com/index.php?file=TRAVERSAL -f /etc/h
 | -m | Module (http, http-url, ftp, tftp payload, stdout) |
 | -h | Hostname |
 | -O | Operating System detection for intelligent fuzzing (nmap) |
-| -o | Operating System type if known ("windows", "unix" or "generic") |
+| -o | Operating System type if known ("windows", "unix", or "generic") |
 | -d | Depth of traversals (default: 6) |
 | -f | Specific filename (default: according to OS detected) |
 | -S | Use SSL for HTTP and Payload module (not needed for http-url) |
@@ -679,7 +679,7 @@ wapiti -v 2 --color -u https://somesite.com/app/ --scope folder -c cookies.json 
 | --flush-attacks | Flush attack history and vulnerabilities for the current session |
 | --flush-session | Flush everything that was previously found for this target |
 
-For more options run `man wapiti`, `wapiti -h` or `wapiti -hh`.
+For more options run `man wapiti`, `wapiti -h`, or `wapiti -hh`.
 
 | Modules (default) | Modules (optional) |
 | --- | --- |
